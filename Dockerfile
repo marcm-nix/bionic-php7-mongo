@@ -36,4 +36,4 @@ RUN echo "extension=yaml.so" >> /etc/php/7.2/mods-available/yaml.ini && \
 RUN mkdir -p /app
 WORKDIR /app
 
-CMD bin/console server:run "localhost:80"
+CMD bin/console server:run '*:80'
